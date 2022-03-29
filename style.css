@@ -1,19 +1,91 @@
-body {
+html {
     background-image: url(./images/ProfileImg.JPG);
     background-color: rgba(255,255,255,1);
     background-blend-mode: luminosity;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: local;
+    background-attachment: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+Flex display to position elements next to each other on one line
+Space-between to create space between elements to postion each to the far left/right
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header div {
+    font-size: 0.9em;
+    letter-spacing: 4px;
+}
+
+header div.right_side a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+header div.right_side a:visited {
+    color: black;
+}
+
+header div.right_side a:hover {
+    font-style: italic;
+    color: rgb(245, 233, 124);
 }
 
 #wrapper {
-    width: 85%;
+    width: 65%;
     margin: auto;
+    background: rgba(215, 139, 218, 0.2);
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    font-size: smaller;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 90px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 0;
+    letter-spacing: 0.3em;
 }
 
 .contact.links img {
-   float: right;
-   width: 40px;
-   height: 40px;
-}
+    width: 25px;
+    height: 25px;
+    padding-right: 20px;
+ }
+
+ footer {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     font-size: 12.5px;
+     text-align: center;
+
+ }
+
+ footer div {
+     padding: 5px;
+     letter-spacing: 0.9em;
+ }
+
+ footer div:hover {
+     color: rgb(245, 233, 124);
+     font-style: italic;
+ }
