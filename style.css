@@ -1,3 +1,8 @@
+/* BACKGROUND AND BODY 
+Background image as profile photo & changed to black and white
+Stretched to cover full screen, not repeated & will scroll with page
+Set font
+*/
 html {
     background-image: url(./images/ProfileImg.JPG);
     background-color: rgba(255,255,255,1);
@@ -5,12 +10,20 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, Sans-serif;
 }
 
-/* 
-Flex display to position elements next to each other on one line
-Space-between to create space between elements to postion each to the far left/right
+/*
+Removed white spacing to left of footer
+*/
+body {
+    margin: 0;
+}
+
+/* HEADER 
+Flex container to display items in a row
+Positioned brand name and navigation bar to far left and far right
+Padding for cleaner look 
 */
 
 header {
@@ -22,11 +35,15 @@ header {
 header div {
     font-size: 0.9em;
     letter-spacing: 4px;
+    padding: 8.5px;
 }
 
 header div.right_side a {
-    margin-right: 10px;
     text-decoration: none;
+}
+
+header div.right_side :first-child {
+    margin-right: 10px;
 }
 
 header div.right_side a:visited {
@@ -38,16 +55,14 @@ header div.right_side a:hover {
     color: rgb(245, 233, 124);
 }
 
-#about_me_body {
-    width: 65%;
-    margin: auto;
-    background: rgba(215, 139, 218, 0.2);
-    border-radius: 25px;
-    padding: 10px 20px;
-    text-align: center;
-    color: white;
-    letter-spacing: 5px;
-    font-size: smaller;
+/* ABOUT ME SECTION 
+Slightly transparent purple rounded container for text body, headers outside
+Centered container horizontally
+*/
+
+#about_me {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 #about_me h2 {
@@ -65,13 +80,23 @@ header div.right_side a:hover {
     letter-spacing: 0.3em;
 }
 
-.contact.links img {
-    width: 25px;
-    height: 25px;
-    padding-right: 20px;
- }
+#about_me_body {
+    width: 65%;
+    height: 65%;
+    margin: auto;
+    background: rgba(215, 139, 218, 0.2);
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    font-size: smaller;
+    margin-bottom: 100px;
+}
 
- /* Skills and Portfolio Page*/
+ /* SKILLS AND PORTFOLIO PAGE
+ */
+
 #skills {
     text-align: center;
 }
@@ -106,24 +131,47 @@ header div.right_side a:hover {
     font-size: 100px;
 }
 
+/* STYLING FOR BOTH PAGES
+*/
+
 h2:hover {
     text-decoration:line-through;
 }
 
+/* FOOTER CONTACT LINKS
+Fixed when page scrolls
+*/
+
  footer {
-     position: absolute;
+     position: fixed;
      bottom: 0;
      width: 100%;
-     font-size: 12.5px;
+     font-size: 10px;
      text-align: center;
+     background-color: #575757;
  }
 
  footer div {
-     padding: 5px;
+     padding: 9px 9px 6px;
      letter-spacing: 0.9em;
  }
 
  footer div:hover {
      color: rgb(245, 233, 124);
      font-style: italic;
+ }
+
+.contact.links {
+    padding-top: 0;
+}
+
+ .contact.links img {
+    width: 25px;
+    height: 25px;
+ }
+
+ .contact.links img:hover {
+     background-color: rgb(245, 233, 124);
+     border-radius: 25px;
+     padding: 4px;
  }
