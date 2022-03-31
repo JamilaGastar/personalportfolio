@@ -30,6 +30,7 @@ header div {
     font-size: 0.9em;
     letter-spacing: 4px;
     padding: 8.5px;
+    position: fixed;
 }
 
 header div.right_side {
@@ -98,6 +99,8 @@ Centered container horizontally
 #about_me {
     padding-bottom: 30px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     top: -280px;
 }
@@ -112,7 +115,8 @@ Centered container horizontally
 #about_me_body {
     width: 700px;
     height: 500px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     background: rgba(215, 139, 218, 0.2);
     border-radius: 25px;
     padding: 10px 20px;
