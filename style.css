@@ -30,7 +30,6 @@ header div {
     font-size: 0.9em;
     letter-spacing: 4px;
     padding: 8.5px;
-    position: fixed;
 }
 
 header div.right_side {
@@ -103,6 +102,9 @@ Centered container horizontally
     margin-right: auto;
     position: relative;
     top: -280px;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 #about_me h2 {
@@ -123,7 +125,7 @@ Centered container horizontally
     text-align: center;
     color: rgb(99, 99, 99);
     letter-spacing: 5px;
-    font-size: smaller;
+    font-size: 14px;
 }
 
  /* SKILLS AND PORTFOLIO PAGE
