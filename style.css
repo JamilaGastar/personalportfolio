@@ -6,16 +6,14 @@
 
 }
 
-html {
+/*
+Margin removes white spacing to left of footer
+*/
+
+html body {
     font-family: Arial, Helvetica, Sans-serif;
     font-size: 18px;
     background-color: #ffffff;
-}
-
-/*
-Removed white spacing to left of footer
-*/
-body {
     margin: 0;
 }
 
@@ -26,7 +24,7 @@ Padding for cleaner look
 */
 
 header {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     padding: 40px 25px 10px;
     width: 100%;
@@ -35,22 +33,29 @@ header {
     padding: 30px;
 }
 
-
-header div.right_side {
-    margin-right: 10px;
-    float: right;
+header div.brand {
+    float: left;
+    margin: 10px;
+    padding: 5px;
 }
 
-header div.right_side a:link {
+header nav {
+    margin: 10px;
+    float: right;
+    padding: 5px;
+}
+
+header nav a:link {
     text-decoration: none;
     color: black;
+
 }
 
-header div.right_side a:visited {
+header nav a:visited {
     color: black;
 }
 
-header div.right_side a:hover {
+header nav a:hover {
     font-style: italic;
     color: rgb(245, 233, 124);
 }
@@ -62,8 +67,8 @@ Positioned brand header on top of image
 h1 {
     font-size: 90px;
     position: relative;
-    top: -1150px;
-    left: 40px;
+    top: -1130px;
+    left: 16px;
     margin: 0;
 }
 
@@ -86,8 +91,6 @@ Applied black and white filter
 #profile_image figure img {
     margin: auto;
     filter: grayscale(100%);
-    border-radius: 15px;
-    padding: 30px;
 }
 
 /* ABOUT ME SECTION 
@@ -201,6 +204,8 @@ Fixed when page scrolls
  footer div {
      padding: 9px 9px 6px;
      letter-spacing: 0.9em;
+     font-weight: bold;
+     color: #ffffff;
  }
 
  footer div:hover {
@@ -213,8 +218,8 @@ Fixed when page scrolls
  }
 
  .contact.links img {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     transition: transform .4s;
  }
 
