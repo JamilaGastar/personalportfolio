@@ -1,6 +1,11 @@
 /* BACKGROUND AND BODY 
 */
 
+* { 
+    box-sizing: border-box;
+
+}
+
 html {
     font-family: Arial, Helvetica, Sans-serif;
     background-color: #ffffff;
@@ -22,12 +27,12 @@ Padding for cleaner look
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 40px 25px 10px;
     width: 100%;
 }
 
 header div {
-    font-size: 0.9em;
+    font-size: 15px;
     letter-spacing: 4px;
     padding: 8.5px;
 }
@@ -68,7 +73,6 @@ Clearfix so H1 maintains inside figure containter with image
 */
 
 #profile_image figure {
-    content: "";
     clear: both;
     display: table;
     margin-right: auto;
@@ -101,31 +105,29 @@ Centered container horizontally
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: -280px;
-    content: "";
-    clear: both;
-    display: table;
+    top: -200px;
 }
 
 #about_me h2 {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     margin-bottom: 25px;
     margin-top: 90px;
 }
 
 #about_me_body {
-    width: 700px;
-    height: 500px;
+    width: 850px;
+    height: 750px;
     margin-left: auto;
     margin-right: auto;
     background: rgba(215, 139, 218, 0.2);
     border-radius: 25px;
-    padding: 10px 20px;
+    padding: 25px;
     text-align: center;
     color: rgb(99, 99, 99);
     letter-spacing: 5px;
-    font-size: 14px;
+    font-size: 18px;
+    overflow: auto;
 }
 
  /* SKILLS AND PORTFOLIO PAGE
@@ -136,8 +138,7 @@ Centered container horizontally
 }
 
 #skills h2 {
-    font-size: 20px;
-    text-align: center;
+    font-size: 25px;
     margin-bottom: 0px;
     margin-top: 90px;
 }
@@ -163,6 +164,7 @@ Displayed listed items next to each other
 
 #portfolio h2 {
     margin-top: 100px;
+    font-size: 25px;
 }
 
 #portfolio {
@@ -188,7 +190,7 @@ Fixed when page scrolls
      position: fixed;
      bottom: 0;
      width: 100%;
-     font-size: 0.9em;
+     font-size: 15px;
      text-align: center;
      background-color: #575757;
  }
@@ -198,19 +200,20 @@ Fixed when page scrolls
      letter-spacing: 0.9em;
  }
 
-.contact.links {
+ footer div:hover {
+    color: rgb(245, 233, 124);
+    font-style: italic;
+     }
+     
+ .contact.links {
     padding-top: 0;
-}
+ }
 
  .contact.links img {
     width: 25px;
     height: 25px;
+    transition: transform .4s;
  }
-
- footer div:hover {
-    color: rgb(245, 233, 124);
-    font-style: italic;
-}
 
 /*
 Contact img icons to change colour and rounded border on hover
@@ -220,4 +223,6 @@ Contact img icons to change colour and rounded border on hover
      background-color: rgb(245, 233, 124);
      border-radius: 30px;
      padding: 5px;
+     transform: scale(1.2);
  }
+
