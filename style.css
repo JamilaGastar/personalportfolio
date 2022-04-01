@@ -8,6 +8,7 @@
 
 html {
     font-family: Arial, Helvetica, Sans-serif;
+    font-size: 18px;
     background-color: #ffffff;
 }
 
@@ -109,7 +110,6 @@ Centered container horizontally
 }
 
 #about_me h2 {
-    font-size: 25px;
     text-align: center;
     margin-bottom: 25px;
     margin-top: 90px;
@@ -126,7 +126,6 @@ Centered container horizontally
     text-align: center;
     color: rgb(99, 99, 99);
     letter-spacing: 5px;
-    font-size: 18px;
     overflow: auto;
 }
 
@@ -135,10 +134,13 @@ Centered container horizontally
 
 #skills {
     text-align: center;
+    width: 850px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #skills h2 {
-    font-size: 25px;
     margin-bottom: 0px;
     margin-top: 90px;
 }
@@ -151,7 +153,6 @@ Removed bullet points
     list-style-type: none;
     letter-spacing: 5px;
     color: rgb(99, 99, 99);
-    font-size: smaller;
 }
 
 /*
@@ -169,6 +170,10 @@ Displayed listed items next to each other
 
 #portfolio {
     text-align: center;
+    width: 850px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #portfolio div {
@@ -177,6 +182,10 @@ Displayed listed items next to each other
 
 /* STYLING FOR BOTH PAGES
 */
+
+h2 {
+    font-size: 25px;
+}
 
 h2:hover {
     text-decoration:line-through;
