@@ -31,17 +31,11 @@ header {
     font-size: 15px;
     letter-spacing: 4px;
     padding: 30px;
+    display: flex;
 }
 
-header div.brand {
-    float: left;
+header div.brand nav {
     margin: 10px;
-    padding: 5px;
-}
-
-header nav {
-    margin: 10px;
-    float: right;
     padding: 5px;
 }
 
@@ -90,7 +84,7 @@ Applied black and white filter
 */
 
 #profile_image figure img {
-    margin: auto;
+    margin: 50px;
     filter: grayscale(100%);
     display: table;
 }
