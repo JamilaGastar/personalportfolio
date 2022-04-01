@@ -66,7 +66,6 @@ h1 {
     top: -1150px;
     left: 40px;
     margin: 0;
-    padding: 5px;
 }
 
 /*
@@ -74,7 +73,6 @@ Clearfix so H1 maintains inside figure containter with image
 */
 
 #profile_image figure {
-    clear: both;
     display: table;
     margin-right: auto;
     margin-left: auto;
@@ -87,7 +85,6 @@ Applied black and white filter
 */
 
 #profile_image figure img {
-    display: block;
     margin: auto;
     filter: grayscale(100%);
     border-radius: 15px;
@@ -105,14 +102,13 @@ Centered container horizontally
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    top: -200px;
+    display: table;
 }
 
 #about_me h2 {
     text-align: center;
     margin-bottom: 25px;
-    margin-top: 90px;
+    display: block;
 }
 
 #about_me_body {
@@ -120,6 +116,7 @@ Centered container horizontally
     height: 750px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 200px;
     background: rgba(215, 139, 218, 0.2);
     border-radius: 25px;
     padding: 25px;
@@ -177,7 +174,7 @@ Displayed listed items next to each other
 }
 
 #portfolio div {
-    font-size: 100px;
+    font-size: 90px;
 }
 
 /* STYLING FOR BOTH PAGES
