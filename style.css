@@ -26,7 +26,7 @@ Padding for cleaner look
 */
 
 header {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     padding: 40px 25px 10px;
     width: 100%;
@@ -34,6 +34,7 @@ header {
     letter-spacing: 4px;
     padding: 30px;
 }
+
 
 header div.right_side {
     margin-right: 10px;
