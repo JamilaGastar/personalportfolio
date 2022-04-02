@@ -1,11 +1,4 @@
 /* BACKGROUND AND BODY 
-*/
-
-* { 
-    box-sizing: border-box;
-
-}
-
 /*
 Margin removes white spacing to left of footer
 */
@@ -36,7 +29,6 @@ header nav a:link {
     text-decoration: none;
     color: black;
     padding: 5px;
-
 }
 
 header nav a:visited {
@@ -101,8 +93,6 @@ Centered container horizontally
 */
 
 #about_me {
-    padding-bottom: 30px;
-    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     display: table;
@@ -117,7 +107,7 @@ Centered container horizontally
 #about_me_body {
     width: 850px;
     height: 750px;
-    margin: 0 100px 200px;
+    margin: 0 100px 100px;
     background: rgba(215, 139, 218, 0.2);
     border-radius: 25px;
     padding: 25px;
@@ -130,17 +120,22 @@ Centered container horizontally
  /* SKILLS AND PORTFOLIO PAGE
  */
 
-#skills {
+#skills_list {
+    width: 280px;
+    margin: 0 100px 100px;
+    background: rgba(215, 139, 218, 0.2);
+    border-radius: 25px;
+    padding: 25px;
     text-align: center;
-    width: 850px;
-    height: 250px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #skills h2 {
-    margin-bottom: 0px;
-    margin-top: 90px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
 }
 
 /*
@@ -151,6 +146,7 @@ Removed bullet points
     list-style-type: none;
     letter-spacing: 5px;
     color: rgb(99, 99, 99);
+    padding-left: 0;
 }
 
 /*
