@@ -21,7 +21,7 @@ Z index 1 to fix image overlaying
 
 header {
     background-color: #ffffff;
-    padding: 40px 40px;
+    padding: 25px;
     width: 100%;
     font-size: 15px;
     letter-spacing: 5px;
@@ -62,19 +62,13 @@ header nav a:hover {
 Display table to center image with auto left and right margins and h1 and brand name stays on image
 */
 
-#profile_image figure {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 /*
 Applied black and white filter
 Margin for centering
 */
 
 #profile_image figure img {
-    margin: 50px;
+    margin-top: 50px;
     filter: grayscale(100%);
     margin-left: auto;
     margin-right: auto;
@@ -122,18 +116,13 @@ Centered text and colour changed with spacing look
 Overflow auto for scrollbar if text is outside container dimensions
 */
 
-#about_me {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #about_me_body {
     width: 850px;
     height: 750px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    display: block;
     background: rgba(215, 139, 218, 0.2);
     border-radius: 25px;
     padding: 25px;
@@ -147,12 +136,6 @@ Overflow auto for scrollbar if text is outside container dimensions
  Margin left and right set and display to center horizontally
  */
 
-#skills {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /*
 Aligned heading, centered horizontally
 Margin to create space between Portfolio Section
@@ -160,7 +143,10 @@ Margin to create space between Portfolio Section
 
 #skills_list {
     width: 280px;
-    margin: 0 50px 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
     background: rgba(215, 139, 218, 0.2);
     border-radius: 25px;
     padding: 25px;
@@ -188,16 +174,17 @@ Displayed listed items next to each other
 
 #portfolio {
     text-align: center;
-    height: 700px;
+    height: 400px;
 }
 
 #portfolio_body {
     display: inline-flex;
-    margin: auto;
     text-align: center;
     border-style: solid;
     font-size: 60px;
     padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -276,5 +263,11 @@ Contact img icons to change colour and rounded border on hover
     border-radius: 30px;
     padding: 5px;
     transform: scale(1.2);
+}
+
+div#wrapper {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
