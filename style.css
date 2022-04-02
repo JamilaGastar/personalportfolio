@@ -1,5 +1,5 @@
 /* BACKGROUND AND BODY 
-/*
+All font 18px unless specified elsewhere
 Margin removes white spacing to left of footer
 */
 
@@ -11,9 +11,9 @@ html body {
 }
 
 /* HEADER 
-Flex container to display items in a row
-Positioned brand name and navigation bar to far left and far right
-Padding for cleaner look 
+Padding for clean look spacing top, left and right
+No padding on bottom to minimize gap between profile photo
+Width set to take up full width of browser
 */
 
 header {
@@ -25,11 +25,22 @@ header {
     margin: 0;
 }
 
+/*
+Removed default blue and underline for links
+Link colours to black
+Padding for even spacing between links
+*/
+
 header nav a:link {
     text-decoration: none;
     color: black;
     padding: 5px;
 }
+
+/*
+Visited link colour to black
+On hover, links change colour and to italic style
+*/
 
 header nav a:visited {
     color: black;
@@ -41,7 +52,33 @@ header nav a:hover {
 }
 
 /* PROFILE IMAGE
-Positioned brand header on top of image
+Display table to center image with auto left and right margins and h1 and brand name stays on image
+*/
+
+#profile_image figure {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*
+Applied black and white filter
+Margin for centering
+*/
+
+#profile_image figure img {
+    margin: 50px;
+    filter: grayscale(100%);
+    display: table;
+}
+
+/*
+Centered h1, font increased with letter spacing look
+Colour adjusted to off white slightly translucent
+Positioned relative to orginal location so is sitting on top of image
+Removed margin to minimise space between brand name div
 */
 
 h1 {
@@ -62,34 +99,9 @@ div.brand {
     top: -1100px;
 }
 
-/*
-Clearfix so H1 maintains inside figure containter with image
-*/
-
-#profile_image figure {
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-}
-
-/*
-Centered profile image
-Applied black and white filter
-*/
-
-#profile_image figure img {
-    margin: 50px;
-    filter: grayscale(100%);
-    display: table;
-}
 
 /* ABOUT ME SECTION 
-Positioned container to minimise gap between profile image section
-Slightly transparent purple rounded container for text body
-Centered container horizontally
+Display table, margin left and right to auto centers horizontally
 */
 
 #about_me {
@@ -98,16 +110,20 @@ Centered container horizontally
     display: table;
 }
 
-#about_me h2 {
-    text-align: center;
-    margin-bottom: 25px;
-    display: block;
-}
+/*
+Set container box around body text, semi translucent background
+Fixed width and height 
+Margin left and right to center, no margin on top to minimize blank space
+Rounded edges on container
+Padding for neater look between text and container
+Centered text and colour changed with spacing look
+Overflow auto for scrollbar if text is outside container dimensions
+*/
 
 #about_me_body {
     width: 850px;
     height: 750px;
-    margin: 0 100px 100px;
+    margin: 0 50px 50px;
     background: rgba(215, 139, 218, 0.2);
     border-radius: 25px;
     padding: 25px;
@@ -117,29 +133,32 @@ Centered container horizontally
     overflow: auto;
 }
 
- /* SKILLS AND PORTFOLIO PAGE
+ /* SKILLS
+ Margin left and right set and display to center horizontally
  */
+
+#skills {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+/*
+Aligned heading, centered horizontally
+Margin to create space between Portfolio Section
+*/
 
 #skills_list {
     width: 280px;
-    margin: 0 100px 100px;
+    margin: 0 50px 50px;
     background: rgba(215, 139, 218, 0.2);
     border-radius: 25px;
     padding: 25px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#skills h2 {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
 }
 
 /*
-Removed bullet points
+Removed bullet points & unnecessary left padding
 */
 
 #skills ul {
@@ -157,27 +176,35 @@ Displayed listed items next to each other
     display: inline;
 }
 
-#portfolio h2 {
-    margin-top: 100px;
+#portfolio {
+    text-align: center;
+
+/* STYLING FOR BOTH PAGES*/
+
+/*
+Centered text
+Margin bottom for space between body section
+Display for centering
+*/
+
+
+}
+
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 25px;
+    display: block;
+}
+
+#skills h2 {
+    margin-top: 50px;
     font-size: 25px;
 }
 
-#portfolio {
-    text-align: center;
-    width: 850px;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#portfolio div {
-    font-size: 90px;
-}
-
-/* STYLING FOR BOTH PAGES
-*/
-
-h2 {
+#portfolio h2 {
+    margin-top: 50px;
     font-size: 25px;
 }
 
@@ -189,45 +216,45 @@ h2:hover {
 Fixed when page scrolls
 */
 
- footer {
-     position: fixed;
-     bottom: 0;
-     width: 100%;
-     font-size: 15px;
-     text-align: center;
-     background-color: #575757;
- }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    background-color: #575757;
+}
 
- footer div {
-     padding: 9px 9px 6px;
-     letter-spacing: 0.9em;
-     font-weight: bold;
-     color: #ffffff;
- }
+footer div {
+    padding: 9px 9px 6px;
+    letter-spacing: 0.9em;
+    font-weight: bold;
+    color: #ffffff;
+}
 
- footer div:hover {
-    color: rgb(245, 233, 124);
-    font-style: italic;
-     }
-     
- .contact.links {
-    padding-top: 0;
- }
+footer div:hover {
+   color: rgb(245, 233, 124);
+   font-style: italic;
+    }
+    
+.contact.links {
+   padding-top: 0;
+}
 
- .contact.links img {
-    width: 40px;
-    height: 40px;
-    transition: transform .4s;
- }
+.contact.links img {
+   width: 40px;
+   height: 40px;
+   transition: transform .4s;
+}
 
 /*
 Contact img icons to change colour and rounded border on hover
 */
 
- .contact.links img:hover {
-     background-color: rgb(245, 233, 124);
-     border-radius: 30px;
-     padding: 5px;
-     transform: scale(1.2);
- }
+.contact.links img:hover {
+    background-color: rgb(245, 233, 124);
+    border-radius: 30px;
+    padding: 5px;
+    transform: scale(1.2);
+}
 
