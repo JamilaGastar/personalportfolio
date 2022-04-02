@@ -56,11 +56,11 @@ Display table to center image with auto left and right margins and h1 and brand 
 */
 
 #profile_image figure {
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
 }
 
 /*
@@ -178,18 +178,29 @@ Displayed listed items next to each other
 
 #portfolio {
     text-align: center;
+    height: 700px;
+}
+
+#portfolio_body {
+    display: inline-flex;
+    margin: auto;
+    text-align: center;
+    border-style: solid;
+    font-size: 60px;
+    padding: 20px;
+}
+
+
+
 
 /* STYLING FOR BOTH PAGES*/
 
 /*
-Centered text
+Centered h2
 Margin bottom for space between body section
 Display for centering
+H2 Hover line through effect
 */
-
-
-}
-
 
 h2 {
     font-size: 25px;
@@ -200,12 +211,10 @@ h2 {
 
 #skills h2 {
     margin-top: 50px;
-    font-size: 25px;
 }
 
 #portfolio h2 {
     margin-top: 50px;
-    font-size: 25px;
 }
 
 h2:hover {
@@ -213,7 +222,8 @@ h2:hover {
 }
 
 /* FOOTER CONTACT LINKS
-Fixed when page scrolls
+Fixed when page scrolls and width to fill browser width
+Centered text with font size and background colour
 */
 
 footer {
@@ -223,23 +233,25 @@ footer {
     font-size: 15px;
     text-align: center;
     background-color: #575757;
+    padding: 4px;
 }
 
 footer div {
-    padding: 9px 9px 6px;
-    letter-spacing: 0.9em;
+    padding: 9px;
+    letter-spacing: 5px;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
+    font-size: 18px;
 }
 
 footer div:hover {
    color: rgb(245, 233, 124);
    font-style: italic;
     }
-    
-.contact.links {
-   padding-top: 0;
-}
+
+ /*
+ Resized contact icons and timed transition to hover .4s
+ */
 
 .contact.links img {
    width: 40px;
