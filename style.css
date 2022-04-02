@@ -8,21 +8,28 @@ html body {
     font-size: 18px;
     background-color: #ffffff;
     margin: 0;
+    padding: 0;
 }
 
 /* HEADER 
 Padding for clean look spacing top, left and right
 No padding on bottom to minimize gap between profile photo
 Width set to take up full width of browser
+Fixed, top 0 to always keep on top of browser
+Z index 1 to fix image overlaying
 */
 
 header {
-    padding: 40px 40px 0px;
+    background-color: #ffffff;
+    padding: 40px 40px;
     width: 100%;
     font-size: 15px;
     letter-spacing: 5px;
     text-align: center;
     margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 /*
@@ -56,11 +63,9 @@ Display table to center image with auto left and right margins and h1 and brand 
 */
 
 #profile_image figure {
-    margin-top: 0;
-    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    display: table;
+    display: block;
 }
 
 /*
@@ -71,7 +76,9 @@ Margin for centering
 #profile_image figure img {
     margin: 50px;
     filter: grayscale(100%);
-    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /*
@@ -104,11 +111,6 @@ div.brand {
 Display table, margin left and right to auto centers horizontally
 */
 
-#about_me {
-    margin-left: auto;
-    margin-right: auto;
-    display: table;
-}
 
 /*
 Set container box around body text, semi translucent background
@@ -120,10 +122,18 @@ Centered text and colour changed with spacing look
 Overflow auto for scrollbar if text is outside container dimensions
 */
 
+#about_me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #about_me_body {
     width: 850px;
     height: 750px;
-    margin: 0 50px 50px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
     background: rgba(215, 139, 218, 0.2);
     border-radius: 25px;
     padding: 25px;
@@ -138,9 +148,9 @@ Overflow auto for scrollbar if text is outside container dimensions
  */
 
 #skills {
+    display: table;
     margin-left: auto;
     margin-right: auto;
-    display: table;
 }
 
 /*
@@ -191,8 +201,6 @@ Displayed listed items next to each other
 }
 
 
-
-
 /* STYLING FOR BOTH PAGES*/
 
 /*
@@ -232,7 +240,7 @@ footer {
     width: 100%;
     font-size: 15px;
     text-align: center;
-    background-color: #575757;
+    background-color: #5e5e5e;
     padding: 4px;
 }
 
