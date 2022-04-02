@@ -24,24 +24,18 @@ Padding for cleaner look
 */
 
 header {
-    justify-content: space-between;
-    padding: 40px 25px 10px;
+    padding: 40px 40px 0px;
     width: 100%;
-    height: 20px;
     font-size: 15px;
-    letter-spacing: 4px;
-    padding: 30px;
-    display: flex;
-}
-
-header div.brand nav {
-    margin: 10px;
-    padding: 5px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 0;
 }
 
 header nav a:link {
     text-decoration: none;
     color: black;
+    padding: 5px;
 
 }
 
@@ -59,11 +53,21 @@ Positioned brand header on top of image
 */
 
 h1 {
-    font-size: 90px;
-    position: relative;
-    top: -1130px;
-    left: 16px;
+    text-align: center;
+    font-size: 70px;
     margin: 0;
+    letter-spacing: 10px;
+    color: rgb(255, 255, 255, 0.8);
+    position: relative;
+    top: -1000px;
+}
+
+div.brand {
+    text-align: center;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255, 0.8);
+    position: relative;
+    top: -1100px;
 }
 
 /*
@@ -74,7 +78,8 @@ Clearfix so H1 maintains inside figure containter with image
     display: table;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
 }
 
