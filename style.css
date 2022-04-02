@@ -1,6 +1,7 @@
 /* BACKGROUND AND BODY 
-All font 18px unless specified elsewhere
-Margin removes white spacing to left of footer
+Default font fam and size set
+Set background colour
+Removed any default margin and padding
 */
 
 html body {
@@ -12,11 +13,12 @@ html body {
 }
 
 /* HEADER 
-Padding for clean look spacing top, left and right
-No padding on bottom to minimize gap between profile photo
+Set background colour
+Padding for clean look spacing around elements
 Width set to take up full width of browser
+Set Font size and letter spacing
 Fixed, top 0 to always keep on top of browser
-Z index 1 to fix image overlaying
+Z index 1 to set in front of profile
 */
 
 header {
@@ -34,7 +36,7 @@ header {
 
 /*
 Removed default blue and underline for links
-Link colours to black
+Link colours set to black
 Padding for even spacing between links
 */
 
@@ -45,7 +47,7 @@ header nav a:link {
 }
 
 /*
-Visited link colour to black
+Visited link colour changed to black
 On hover, links change colour and to italic style
 */
 
@@ -59,38 +61,38 @@ header nav a:hover {
 }
 
 /* PROFILE IMAGE
-Display table to center image with auto left and right margins and h1 and brand name stays on image
-*/
-
-/*
+Margin left and right for centering and block display
 Applied black and white filter
-Margin for centering
 */
 
 #profile_image figure img {
     margin-top: 50px;
-    filter: grayscale(100%);
     margin-left: auto;
     margin-right: auto;
     display: block;
+    filter: grayscale(100%);
 }
 
 /*
 Centered h1, font increased with letter spacing look
+Removed margin to minimise space between brand name div
 Colour adjusted to off white slightly translucent
 Positioned relative to orginal location so is sitting on top of image
-Removed margin to minimise space between brand name div
 */
 
 h1 {
     text-align: center;
     font-size: 70px;
-    margin: 0;
     letter-spacing: 10px;
+    margin: 0;
     color: rgb(255, 255, 255, 0.8);
     position: relative;
     top: -1000px;
 }
+
+/*
+Same as above besides margin adjustment
+*/
 
 div.brand {
     text-align: center;
@@ -102,11 +104,16 @@ div.brand {
 
 
 /* ABOUT ME SECTION 
-Display table, margin left and right to auto centers horizontally
+Wrapper container centered
 */
 
+div#wrapper {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/*
+/* 
 Set container box around body text, semi translucent background
 Fixed width and height 
 Margin left and right to center, no margin on top to minimize blank space
@@ -132,13 +139,10 @@ Overflow auto for scrollbar if text is outside container dimensions
     overflow: auto;
 }
 
- /* SKILLS
- Margin left and right set and display to center horizontally
- */
-
-/*
-Aligned heading, centered horizontally
-Margin to create space between Portfolio Section
+/* SKILLS SECTION
+Set width for container
+Margin left and right center horizontally
+Margin bottom to create space between next section
 */
 
 #skills_list {
@@ -155,6 +159,7 @@ Margin to create space between Portfolio Section
 
 /*
 Removed bullet points & unnecessary left padding
+Changed font colour
 */
 
 #skills ul {
@@ -172,10 +177,22 @@ Displayed listed items next to each other
     display: inline;
 }
 
+/*
+Centered text
+Set fixed height
+*/
+
 #portfolio {
     text-align: center;
     height: 400px;
 }
+
+/*
+In line flex to only take up width of element
+Centered text
+Added solid border and padding for neat spacing
+Margins to center horizontally
+*/
 
 #portfolio_body {
     display: inline-flex;
@@ -187,22 +204,28 @@ Displayed listed items next to each other
     margin-right: auto;
 }
 
-
-/* STYLING FOR BOTH PAGES*/
-
 /*
-Centered h2
+Centered h2 headers
 Margin bottom for space between body section
-Display for centering
-H2 Hover line through effect
+On hover creates line through effect
 */
 
 h2 {
     font-size: 25px;
     text-align: center;
     margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
+
+h2:hover {
+    text-decoration:line-through;
+}
+
+/*
+Top margins for spacing
+*/
 
 #skills h2 {
     margin-top: 50px;
@@ -212,12 +235,9 @@ h2 {
     margin-top: 50px;
 }
 
-h2:hover {
-    text-decoration:line-through;
-}
-
 /* FOOTER CONTACT LINKS
-Fixed when page scrolls and width to fill browser width
+Set to be fixed at bottom even when page scrolls
+Width to fill browser width
 Centered text with font size and background colour
 */
 
@@ -231,6 +251,10 @@ footer {
     padding: 4px;
 }
 
+/*
+Bold text
+*/
+
 footer div {
     padding: 9px;
     letter-spacing: 5px;
@@ -239,13 +263,18 @@ footer div {
     font-size: 18px;
 }
 
+/*
+Text turns yellow and italic on hover
+*/
+
 footer div:hover {
    color: rgb(245, 233, 124);
    font-style: italic;
     }
 
  /*
- Resized contact icons and timed transition to hover .4s
+ Resized contact icons
+ Upon hover applies .4 second transition
  */
 
 .contact.links img {
@@ -255,7 +284,8 @@ footer div:hover {
 }
 
 /*
-Contact img icons to change colour and rounded border on hover
+Contact img icons change colour with rounded border on hover
+and scale bigger 
 */
 
 .contact.links img:hover {
@@ -265,9 +295,4 @@ Contact img icons to change colour and rounded border on hover
     transform: scale(1.2);
 }
 
-div#wrapper {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
