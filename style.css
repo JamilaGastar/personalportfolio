@@ -38,6 +38,7 @@ header nav a:hover {
 h1 {
     text-align: center;
     margin: 0;
+    font-size: 45px;
 }
 
 #profile_image figure img {
@@ -46,7 +47,7 @@ h1 {
     margin-right: auto;
     display: block;
     filter: grayscale(100%);
-    width: 70%;
+    width: 50%;
 }
 
 #wrapper {
