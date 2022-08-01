@@ -13,11 +13,9 @@ header {
     font-size: 15px;
     letter-spacing: 5px;
     margin: 10px;
-    /* position: fixed; */
-    /* top: 0; */
-    /* z-index: 1; */
     justify-content: space-between;
     display: flex;
+    min-width: 1200px;
 }
 
 header nav a:link {
@@ -38,7 +36,7 @@ header nav a:hover {
 h1 {
     text-align: center;
     margin: 0;
-    font-size: 45px;
+    font-size: 25px;
 }
 
 #profile_image figure img {
@@ -48,10 +46,12 @@ h1 {
     display: block;
     filter: grayscale(100%);
     width: 50%;
+    min-width: 600px;
 }
 
 #wrapper {
     width: 80%;
+    min-width: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -98,16 +98,25 @@ h2:hover {
     text-decoration:line-through;
 }
 
+
 .portfolio1-img-background {
     background-image: url(./images/KanyeQuoteGenerator.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 500px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .portfolio2-img-background {
     background-image: url(./images/ReactProject.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 500px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer {
@@ -115,12 +124,12 @@ footer {
     width: 100%;
     font-size: 15px;
     text-align: center;
-    background-color: #5e5e5e;
     padding: 4px;
 }
 
 footer {
     margin-top: 150px;
+    position: fixed;
 }
 
 footer div {
@@ -131,20 +140,20 @@ footer div {
     font-size: 18px;
 }
 
-footer div:hover {
+/* footer div:hover {
    color: rgb(245, 233, 124);
    font-style: italic;
-    }
+    } */
 
 
 .contact.links img {
-   width: 40px;
-   height: 40px;
+   width: 50px;
+   height: 50px;
    transition: transform .4s;
 }
 
 .contact.links img:hover {
-    background-color: rgb(245, 233, 124);
+    background-color: rgb(192, 126, 233);
     border-radius: 30px;
     padding: 5px;
     transform: scale(1.2);
